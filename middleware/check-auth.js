@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const authConfig = require("../config/authConfig");
+const authConfig = require("../config/authconfig");
 const Member = require("../model/memberModel");
 
 //module.exports:  remove verifyToken

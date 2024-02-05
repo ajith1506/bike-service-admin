@@ -1,6 +1,4 @@
 const OrderModel = require("../model/orderModel");
-const MemberModel = require("../model/memberModel");
-const CustomerModel = require("../model/customerModel");
 
 //Find Placed Orders
 exports.findPlacedOrders = (req, res) => {

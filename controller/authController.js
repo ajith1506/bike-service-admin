@@ -2,7 +2,7 @@ const Member = require("../model/memberModel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
-const authConfig = require("../config/authConfig");
+const authConfig = require("../config/authconfig");
 
 exports.login = (req, res, next) => {
   Member.findOne({ email: req.body.email })
