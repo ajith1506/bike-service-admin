@@ -6,7 +6,8 @@ const BikeController = require("../controller/bikeController");
 
 router.post(
   "/addBike",
-  [checkAuth.verifyToken, checkAuth.isAdmin],
+  checkAuth.verifyToken,
+  checkAuth.isAdmin,
   BikeController.addBike
 );
 
