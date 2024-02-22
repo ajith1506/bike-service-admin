@@ -4,12 +4,7 @@ const router = express.Router();
 const checkAuth = require("../middleware/check-auth");
 const BikeController = require("../controller/bikeController");
 
-router.post(
-  "/addBike",
-  checkAuth.verifyToken,
-  checkAuth.isAdmin,
-  BikeController.addBike
-);
+router.post("/addBike", BikeController.addBike);
 
 router.get("/findAll", BikeController.findAllBikes);
 router.get("/findAllBrands", BikeController.findAllBrands);
